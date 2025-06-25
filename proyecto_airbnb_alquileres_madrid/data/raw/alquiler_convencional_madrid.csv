@@ -1,0 +1,38 @@
+localizacion,precio_m2_convencional,lat,lon
+arganzuela,15.2,40.3989,-3.6993
+carabanchel,11.3,40.3822,-3.7433
+chamberí,17.3,40.4331,-3.7078
+chueca,16.5,40.4203,-3.6982
+lavapiés,14.2,40.4084,-3.7038
+malasaña,15.8,40.4252,-3.7058
+moncloa,14.9,40.4351,-3.7289
+salamanca,20.1,40.4264,-3.6787
+tetuán,13.5,40.4625,-3.7041
+usera,11.0,40.3827,-3.7074
+barajas,13.8,40.4733,-3.5776
+centro,17.8,40.4169,-3.7035
+fuencarral,13.3,40.4913,-3.7031
+hortaleza,12.7,40.4764,-3.641
+moratalaz,12.3,40.4073,-3.6544
+puente de vallecas,10.7,40.3905,-3.6632
+retiro,18.0,40.4112,-3.6769
+san blas,11.9,40.4375,-3.6181
+vicálvaro,10.4,40.4001,-3.6054
+villa de vallecas,10.2,40.3689,-3.6015
+los rosales,10.6,40.3467,-3.7051
+lucero,11.5,40.4037,-3.7404
+marroquina,11.8,40.4064,-3.6437
+media lengua,10.9,40.4068,-3.6451
+san isidro,11.1,40.3912,-3.7334
+san pascual,12.4,40.4435,-3.6546
+santa eugenia,10.3,40.3738,-3.6004
+simancas,11.7,40.4327,-3.6233
+vinateros,12.1,40.4085,-3.6483
+]
+
+# Crear DataFrame y guardarlo
+df_convencional = pd.DataFrame(data)
+csv_path = "/mnt/data/alquiler_convencional_madrid.csv"
+df_convencional.to_csv(csv_path, index=False)
+
+csv_path
